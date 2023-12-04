@@ -20,7 +20,7 @@ SC_MODULE(alu)
 			case 2: out_reg = R1 - R2;break; //to subtract the operands
 			case 3: out_reg = R1>>1;break; //right shift the A operand
 			case 4: out_reg = R2<<1;break; //left shift the B operand
-      default: out_reg =0;
+      			default: out_reg =0;
 		}
 		output.write(out_reg);
 	}
